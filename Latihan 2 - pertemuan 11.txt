@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct mahasiswa{
+    char nim[15],nama[20],alamat[50],tl[25],jkl[15];
+    int telp;
+    char kerja[15];
+};
+
+int main(){
+	struct mahasiswa mhs ={
+		"1811011400039",
+		"Ayyub Muhammad",
+		"Ciputat, Kota Tangsel",
+		"Kota Tangsel 14 05 1999",
+		"Laki-laki",
+		"089612068504",
+		"Searching.."
+	};
+    cout << " Nim  			: " << mhs.nim << endl;
+    cout << " Nama 			: " << mhs.nama << endl;
+    cout << " Alamat 			: " << mhs.alamat << endl;
+    cout << " Tempat Tgl/Lahir	: " << mhs.tl << endl;
+    cout << " Jenis Kelamin 		: " << mhs.jkl << endl;
+    cout << " Telepon 		: " << mhs.telp << endl;
+    cout << " Pekerjaan		: " << mhs.kerja << endl;
+    return 0;
+} 
